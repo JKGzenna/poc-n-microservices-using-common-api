@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
 /**
- * Created by bartoszjedrzejewski on 09/06/2016.
+ * Created by Juan Luis Goldaracena Izquierdo
  */
 @RestController
 public class UserDashboardController {
@@ -20,7 +20,7 @@ public class UserDashboardController {
                 "Welcome " + user.getForename() +" "+user.getSurname()+"<br>"+
                 "You have " +user.getPoints() + " points! Good job!<br>"+
                 "<br>"+
-                "<br>"+user.getOrganisation();
+                "<br>"+user.getCountry();
     }
 
 }

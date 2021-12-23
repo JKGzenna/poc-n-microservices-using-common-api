@@ -4,27 +4,27 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by bartoszjedrzejewski on 08/06/2016.
+ * Created by Juan Luis Goldaracena Izquierdo
  */
 public class User {
 
     private final long id;
     private final String forename;
     private final String surname;
-    private final String organisation;
+    private final String country;
     private final List<String> notifications;
     private final long points;
     //Friends are deprecated and should not be used
     private final List<String> friends;
 
     public User(int id) {
-        String[] forenames = {"Alice", "Manjula", "Bartosz", "Mack"};
-        String[] surnames = {"Smith", "Salvatore", "Jedrzejewski", "Scott"};
-        String[] organisations = {"ScottLogic", "UNICEF"};
+        String[] forenames = {"Juan Luis", "Javier", "Joao", "Patrick"};
+        String[] surnames = {"Goldaracena", "Leyva", "Sousa", "Miller"};
+        String[] countries = {"Spain", "Portugal", "UK"};
 
         forename = forenames[id%3];
         surname = surnames[id%4];
-        organisation = organisations[id%2];
+        country = countries[id%2];
         notifications= new ArrayList<>();
         notifications.add("You have been promoted!");
         notifications.add("Sorry, disregard the previous notifaction- wrong user");
@@ -49,7 +49,7 @@ public class User {
     }
 
     public String getOrganisation() {
-        return organisation;
+        return country;
     }
 
     public List<String> getNotifications() {

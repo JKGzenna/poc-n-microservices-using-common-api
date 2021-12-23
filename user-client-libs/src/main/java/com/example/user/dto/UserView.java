@@ -2,11 +2,10 @@ package com.example.user.dto;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by bartoszjedrzejewski on 08/06/2016.
+ * Created by Juan Luis Goldaracena Izquierdo
  */
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class UserView {
@@ -14,7 +13,7 @@ public class UserView {
     private long id;
     private String forename;
     private String surname;
-    private String organisation;
+    private String country;
     private List<String> notifications;
     private long points;
 
@@ -34,8 +33,8 @@ public class UserView {
         return surname;
     }
 
-    public String getOrganisation() {
-        return organisation;
+    public String getCountry() {
+        return country;
     }
 
     public List<String> getNotifications() {
