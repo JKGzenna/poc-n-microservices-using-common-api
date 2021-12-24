@@ -15,6 +15,7 @@ public class UserView {
     private String surname;
     private String country;
     private List<String> notifications;
+    private double accountbalance;
     private long points;
 
     public UserView(){
@@ -37,9 +38,9 @@ public class UserView {
         return country;
     }
 
-    public List<String> getNotifications() {
-        return notifications;
-    }
+    public List<String> getNotifications() { return notifications; }
+
+    public double getAccountbalance() { return accountbalance; }
 
     public long getPoints() {
         return points;

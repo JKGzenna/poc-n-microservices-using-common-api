@@ -17,10 +17,10 @@ public class UserDashboardController {
         RestTemplate restTemplate = new RestTemplate();
         UserView user = restTemplate.getForObject("http://localhost:9001/user?id="+id, UserView.class);
         return "USER DASHBOARD <br>" +
-                "Welcome " + user.getForename() +" "+user.getSurname()+"<br>"+
-                "You have " +user.getPoints() + " points! Good job!<br>"+
-                "<br>"+
-                "<br>"+user.getCountry();
+                "Welcome " + user.getForename() +" "+ user.getSurname()+"<br>"+
+                "You have " + user.getPoints() + " points!, Good job!"+"<br>"+
+                "Your Account Balance: " + user.getAccountbalance() + "€"+"<br>"+
+                "Your Country: " +user.getCountry();
     }
 
 }

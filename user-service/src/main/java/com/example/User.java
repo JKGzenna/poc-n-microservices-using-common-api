@@ -13,21 +13,23 @@ public class User {
     private final String surname;
     private final String country;
     private final List<String> notifications;
+    private final double accountbalance;
     private final long points;
     //Friends are deprecated and should not be used
     private final List<String> friends;
 
     public User(int id) {
-        String[] forenames = {"Juan Luis", "Javier", "Joao", "Patrick"};
-        String[] surnames = {"Goldaracena", "Leyva", "Sousa", "Miller"};
-        String[] countries = {"Spain", "Portugal", "UK"};
+        String[] forenames = {"Juan Luis", "Juan Luis", "Patrick", "Joao", "Javier"};
+        String[] surnames = {"Goldaracena", "Goldaracena", "Miller", "Sousa", "Leyva"};
+        String[] countries = {"Spain", "Spain", "UK", "Portugal", "Spain"};
 
-        forename = forenames[id%3];
-        surname = surnames[id%4];
-        country = countries[id%2];
+        forename = forenames[id%5];
+        surname = surnames[id%5];
+        country = countries[id%5];
         notifications= new ArrayList<>();
         notifications.add("You have been promoted!");
         notifications.add("Sorry, disregard the previous notifaction- wrong user");
+        accountbalance = id * 1000 + 1000.50;
         points = id * 31 % 1000;
 
         //You have no friends
@@ -48,12 +50,16 @@ public class User {
         return surname;
     }
 
-    public String getOrganisation() {
+    public String getCountry() {
         return country;
     }
 
     public List<String> getNotifications() {
         return notifications;
+    }
+
+    public double getAccountbalance() {
+        return accountbalance;
     }
 
     public long getPoints() {
