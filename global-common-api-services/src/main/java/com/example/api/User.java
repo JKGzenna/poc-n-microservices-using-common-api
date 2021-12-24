@@ -1,4 +1,4 @@
-package com.example;
+package com.example.api;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -40,7 +40,7 @@ public class User {
         aviopoints = id * 31 % 1000;
         //Friends are deprecated and should not be used, only for Portugal
         friends = new ArrayList<>();
-        friends.add("Fernando Pinto");000
+        friends.add("Fernando Pinto");
         friends.add("Leonardo Meireles");
         inversionproducts = true;
 
