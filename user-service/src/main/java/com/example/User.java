@@ -27,13 +27,13 @@ public class User {
         surname = surnames[id%5];
         country = countries[id%5];
         notifications= new ArrayList<>();
-        notifications.add("You have been promoted!");
-        notifications.add("Sorry, disregard the previous notifaction- wrong user");
+        notifications.add("Your agent has tried to contact you at 8:45AM");
+        notifications.add("You have new messages");
         accountbalance = id * 1000 + 1000.50;
         points = id * 31 % 1000;
-
-        //You have no friends
         friends = new ArrayList<>();
+        friends.add("Alejandro Capel");
+        friends.add("Francisco Moya");
 
         this.id = id;
     }
@@ -58,9 +58,7 @@ public class User {
         return notifications;
     }
 
-    public double getAccountbalance() {
-        return accountbalance;
-    }
+    public double getAccountbalance() { return accountbalance; }
 
     public long getPoints() {
         return points;
