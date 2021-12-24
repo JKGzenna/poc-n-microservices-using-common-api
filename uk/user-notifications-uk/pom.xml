@@ -38,6 +38,12 @@
 			<artifactId>user-client-libs</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
+		<dependency>
+			<groupId>com.example.dto.libraries</groupId>
+			<artifactId>country-local-libs</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+			<scope>compile</scope>
+		</dependency>
 	</dependencies>
 	
 	<build>
