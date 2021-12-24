@@ -20,6 +20,7 @@ public class UserDashboardControllerSpain {
                 "Welcome " + user.getName() +" "+ user.getSurname()+"<br>"+
                 "You have " + user.getAviopoints() + " points!, Good job!"+"<br>"+
                 "Your Account Balance: " + user.getAccountbalance() + "€"+"<br>"+
+                "Bansacar Products: " +user.isBansacar()+"<br>"+
                 "Your Country: " +user.getCountry();
     }
 

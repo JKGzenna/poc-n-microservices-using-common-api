@@ -19,6 +19,7 @@ public class UserDashboardControllerPortugal {
         return "USER DASHBOARD <br>" +
                 "Welcome " + user.getName() +" "+ user.getSurname()+"<br>"+
                 "Your Account Balance: " + user.getAccountbalance() + "€"+"<br>"+
+                "Bank Insurances: " +user.isInsurances()+"<br>"+
                 "Your Country: " +user.getCountry();
     }
 

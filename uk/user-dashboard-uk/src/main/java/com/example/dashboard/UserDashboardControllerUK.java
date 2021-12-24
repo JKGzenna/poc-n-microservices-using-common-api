@@ -18,8 +18,11 @@ public class UserDashboardControllerUK {
         UserViewUK user = restTemplate.getForObject("http://localhost:9001/user?id="+id, UserViewUK.class);
         return "USER DASHBOARD <br>" +
                 "Welcome " + user.getName() +" "+ user.getSurname()+"<br>"+
-                "Your Account Balance: " + user.getAccountbalance() + "€"+"<br>"+
+                "Your Account Balance: " + user.getAccountbalance() + "£"+"<br>"+
+                "Your Average Balance: " + user.getAveragebalance() + "£"+"<br>"+
+                "Young Plan: " +user.isYoungplan()+"<br>"+
                 "Your Country: " +user.getCountry();
+
     }
 
 }
